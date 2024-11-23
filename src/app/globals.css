@@ -19,3 +19,48 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%; /* Pastikan gambar tidak melebihi lebar container */
+  height: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swiper-slide {
+  opacity: 0.5;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+} */
+
+.top-background {
+  background: linear-gradient(151.17deg, #26C2B9 8.69%, #288BE7 126.06%);
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-prev {
+  left: -20px; /* Adjust for spacing */
+}
+
+.custom-next {
+  right: -20px; /* Adjust for spacing */
+}

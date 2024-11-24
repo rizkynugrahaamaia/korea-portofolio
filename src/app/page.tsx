@@ -17,7 +17,7 @@ export default async function Home() {
   // const users: User[] = await usersRes.json();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#FBFBFB] ">
       <div className="top-background">
         <Header />
         <Main />

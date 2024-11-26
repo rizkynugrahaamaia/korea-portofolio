@@ -72,15 +72,17 @@ export default function Main() {
     <main className="w-full p-8 font-black">
       <div className="flex flex-col lg:flex-row w-ful max-w-7xl mx-auto text-white gap-12">
         <div className="flex-1">
-          <h1 className="hidden md:block text-5xl leading-[62.4px] w-full overflow-visible whitespace-normal break-words">
+          <h1 className="hidden md:block text-5xl leading-[62.4px] w-full overflow-visible whitespace-normal break-words animate-fadeInUp">
             최고의 실력을 가진 외국인 인재를 찾고 계신가요?
           </h1>
           <br />
-          <p className="text-2xl text-[#FFFFFFCC]">법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.</p>
+          <p className="text-2xl text-[#FFFFFFCC] animate-fadeInUp">
+            법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.
+          </p>
           <br />
           <p className="underline text-lg">개발자가 필요하신가요?</p>
           <br />
-          <div className="hidden md:flex gap-4">
+          <div className="hidden md:flex gap-4 animate-fadeIn">
             <div className="flex-1">
               <hr />
               <p className="text-lg mt-1">평균 월 120만원</p>
@@ -98,7 +100,7 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className="flex-1 w-full max-w-lg mx-auto px-8 lg:px-0">
+        <div className="flex-1 w-full max-w-lg mx-auto px-8 lg:px-0 animate-fadeIn">
           <Swiper
             arrowButton={
               <>
@@ -128,7 +130,7 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="hidden md:block -mr-8 overflow-hidden mt-8 ml-44">
+      <div className="hidden md:block -mr-8 overflow-hidden mt-8 ml-44 animate-fadeIn">
         <Swiper component={Content} data={data2} slidesPerView={3.5} spaceBetween={10} centeredSlides={false} />
       </div>
     </main>
